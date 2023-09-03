@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Modal Window</title>
+  </head>
+
+  <body>
+    <h1>What's inside?</h1>
+    <div class="boxImage">
+      <img
+        src="./img/gift_box.png"
+        alt="A pink heart gift box with gold ribbon"
+      />
+    </div>
+
+    <div id="open">Open The Box</div>
+
+    <div id="mask" class="hidden"></div>
+
+    <section id="modal" class="hidden">
+      <p>Happy Birthday!</p>
+      <img src="./img/girlande.png" alt="A birthday girlande" />
+      <p>30% OFF</p>
+      <p>Voucher Code</p>
+      <p>YOUR DAY</p>
+      <img src="./img/open_box.png" alt="A yellow opened gift box" />
+      <div id="close">Close</div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

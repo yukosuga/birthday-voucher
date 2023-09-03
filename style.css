@@ -1,0 +1,146 @@
+body {
+  font-family: "Ysabeau SC", sans-serif;
+  font-size: 40px;
+  color: #a76f0c;
+}
+
+h1 {
+  font-size: 80px;
+  text-align: center;
+  color: #f73687;
+
+  font-family: "Henny Penny", cursive;
+  font-weight: normal;
+}
+
+.boxImage {
+  text-align: center;
+}
+
+.boxImage img {
+  width: 400px;
+  padding-bottom: 25px;
+}
+
+#open,
+#close {
+  cursor: pointer;
+  font-family: "Ysabeau SC", sans-serif;
+  color: white;
+  width: 350px;
+  text-align: center;
+
+  margin: 0 auto;
+  padding: 5px 0;
+  border-radius: 5px;
+  background-color: #e5b026;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+#mask {
+  background-color: rgba(105, 61, 61, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#mask.hidden {
+  display: none;
+}
+
+#modal {
+  background-color: #fff;
+  width: 400px;
+  height: 850px;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.8s;
+}
+
+#modal p {
+  text-align: center;
+  margin: 0 0 20px;
+  color: #f73687;
+}
+
+#modal img:nth-of-type(1),
+#modal img:nth-of-type(2) {
+  width: 300px;
+}
+
+#modal img:nth-of-type(1) {
+  margin: 5px auto 10px;
+}
+
+#modal img:nth-of-type(2) {
+  margin-bottom: 15px;
+}
+
+#modal p,
+#modal img {
+  margin: 0 auto;
+}
+
+#modal p:nth-of-type(1) {
+  padding-top: 35px;
+  font-family: "Henny Penny", cursive;
+  color: #ed8c5d;
+  font-size: 50px;
+}
+
+#modal p:nth-of-type(2) {
+  font-size: 50px;
+}
+
+#modal p:nth-of-type(4) {
+  color: #73c3b4;
+  font-size: 60px;
+}
+
+#modal.hidden {
+  transform: translate(0, -1000px);
+}
+
+@media only screen and (max-width: 480px) {
+  #modal {
+    width: 75%;
+    height: 80%;
+  }
+  h1,
+  .boxImage,
+  #modal img:nth-of-type(1),
+  #modal img:nth-of-type(2),
+  #open,
+  #close {
+    width: 90%;
+  }
+  #modal p:nth-of-type(1) {
+    padding-top: 30px;
+    font-size: 45px;
+  }
+  #modal p:nth-of-type(2),
+  #modal p:nth-of-type(3) {
+    font-size: 30px;
+  }
+  #modal p:nth-of-type(4) {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #modal {
+    width: 600px;
+  }
+  #modal p:nth-of-type(4) {
+    font-size: 75px;
+  }
+}
